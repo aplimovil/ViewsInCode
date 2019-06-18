@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5AF02822B99ADD006DEC62 /* ViewController_constraints_definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5AF02722B99ADD006DEC62 /* ViewController_constraints_definition.swift */; };
+		0B5AF02C22B99C8F006DEC62 /* ViewController_constraints_enabling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5AF02B22B99C8F006DEC62 /* ViewController_constraints_enabling.swift */; };
 		B90FE5891CC1634800462602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90FE5881CC1634800462602 /* AppDelegate.swift */; };
 		B90FE58B1CC1634800462602 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90FE58A1CC1634800462602 /* ViewController.swift */; };
 		B90FE58E1CC1634800462602 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B90FE58C1CC1634800462602 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5AF02722B99ADD006DEC62 /* ViewController_constraints_definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_constraints_definition.swift; sourceTree = "<group>"; };
+		0B5AF02B22B99C8F006DEC62 /* ViewController_constraints_enabling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_constraints_enabling.swift; sourceTree = "<group>"; };
 		B90FE5851CC1634800462602 /* ViewsInCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewsInCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90FE5881CC1634800462602 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B90FE58A1CC1634800462602 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +78,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B5AF02522B99639006DEC62 /* Snippets */ = {
+			isa = PBXGroup;
+			children = (
+				0B5AF02622B99645006DEC62 /* autolayout */,
+			);
+			path = Snippets;
+			sourceTree = "<group>";
+		};
+		0B5AF02622B99645006DEC62 /* autolayout */ = {
+			isa = PBXGroup;
+			children = (
+				0B5AF02722B99ADD006DEC62 /* ViewController_constraints_definition.swift */,
+				0B5AF02B22B99C8F006DEC62 /* ViewController_constraints_enabling.swift */,
+			);
+			path = autolayout;
+			sourceTree = "<group>";
+		};
 		B90FE57C1CC1634800462602 = {
 			isa = PBXGroup;
 			children = (
+				0B5AF02522B99639006DEC62 /* Snippets */,
 				B90FE5871CC1634800462602 /* ViewsInCode */,
 				B90FE59C1CC1634800462602 /* ViewsInCodeTests */,
 				B90FE5A71CC1634800462602 /* ViewsInCodeUITests */,
@@ -259,6 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5AF02822B99ADD006DEC62 /* ViewController_constraints_definition.swift in Sources */,
+				0B5AF02C22B99C8F006DEC62 /* ViewController_constraints_enabling.swift in Sources */,
 				B90FE58B1CC1634800462602 /* ViewController.swift in Sources */,
 				B90FE5891CC1634800462602 /* AppDelegate.swift in Sources */,
 			);
@@ -420,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EXCLUDED_SOURCE_FILE_NAMES = "\"Snippets/autolayout/*\"";
 				INFOPLIST_FILE = ViewsInCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aplimovil;
@@ -434,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EXCLUDED_SOURCE_FILE_NAMES = "\"Snippets/autolayout/*\"";
 				INFOPLIST_FILE = ViewsInCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aplimovil;

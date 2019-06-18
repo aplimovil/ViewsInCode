@@ -28,6 +28,24 @@ class ViewController: UIViewController {
     label.text = "Hello World"
     label.font = label.font.withSize(40)
     label.sizeToFit()
+    //Define the constraints for the labels by code
+    let constraints:[NSLayoutConstraint] = [
+        //red view
+        redView.topAnchor.constraint(equalTo: view.topAnchor),
+        redView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+        redView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+        redView.heightAnchor.constraint(equalTo: view.heightAnchor,
+                                        multiplier: 0.5),
+        //label
+        label.topAnchor.constraint(equalTo: redView.bottomAnchor, constant: 8), label.leadingAnchor.constraint(equalTo:
+            view.layoutMarginsGuide.leadingAnchor)
+    ]
+    //Apply the constraints
+    NSLayoutConstraint.activate(constraints)
+    //When the constraints are added by code it is required to set the translatesAutoresizingMaskIntoConstraints property to false
+    redView.translatesAutoresizingMaskIntoConstraints = false
+    label.translatesAutoresizingMaskIntoConstraints = false
+    
   }
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
